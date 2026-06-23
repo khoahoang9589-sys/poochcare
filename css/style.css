@@ -1,0 +1,5 @@
+/* chứa các selector chung như: navbar, footer, font, color,... */
+
+* {
+  font-family: 'Jost', sans-serif;
+}
