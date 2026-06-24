@@ -3,6 +3,7 @@
 * {
   font-family: 'Jost', sans-serif;
 }
+
 /* Set vars */
 :root {
   --primary-color: #189A46;
@@ -20,6 +21,7 @@
   --iframe-filter: grayscale(0%);
   --widget-bg: #3f3a64;
 }
+
 /* h6-sub-title */
 .sub-title {
   font-size: 18px;
@@ -29,6 +31,7 @@
   letter-spacing: 1px;
   color: var(--secondary);
 }
+
 /* h3-main-title */
 .main-title {
   font-size: 40px;
@@ -36,6 +39,7 @@
   line-height: 48px;
   text-transform: capitalize;
 }
+
 /* <a> Read More */
 a.read {
   font-size: 17px;
