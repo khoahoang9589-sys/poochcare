@@ -1,0 +1,53 @@
+
+.hover-to-blue {
+  transition: color 0.3s ease; 
+}
+
+.hover-to-blue:hover {
+  color: #006644 !important;   
+}
+
+.read-more-btn {
+    font-size: 17px;
+    border-bottom: 2px solid #006644;
+    transition: color 0.3s ease, border-color 0.3s ease; 
+}
+
+.read-more-btn:hover {
+    color: #006644 !important;        
+    border-color: #189a46 !important; 
+}
+
+.overflow-hidden a img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.overflow-hidden:hover a img {
+    transform: scale(1.1);
+}
+
+.custom-link {
+    font-size: 22px;
+    transition: color 0.3s ease; 
+}
+
+.custom-link:hover {
+   color: #198754 !important;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;           
+    height: 40px;          
+    background-color:#f3effd;
+    color: #198754;       
+    font-size: 16px;     
+    transition: all 0.3s ease; 
+}
+
+.social-btn:hover {
+    background-color: #198754 !important; 
+    color: #ffffff !important;          
+}

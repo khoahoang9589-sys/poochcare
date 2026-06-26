@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/_gallery.css">
 </head>
@@ -39,8 +41,96 @@
             </div>
         </div>
     </header>
+
+
  
- 
+ <section class=" gallery w3l-portfolio-8 py-5">
+    <div class="container py-md-5 py-3 GPGallery">
+        
+        <div class=" text-uppercase header-section text-center mx-auto mb-md-5 mb-4" style="max-width: 500px;">
+            <h6 class="sub-title">View Gallery</h6>
+            <h3 class="hny-title">Latest Gallery</h3>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 galler-top g-4" >
+            
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g1.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g1.jpg.jpeg" alt="Gallery 1" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g3.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g3.jpg.jpeg" alt="Gallery 2" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g5.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g5.jpg.jpeg" alt="Gallery 3" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g2.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g2.jpg.jpeg" alt="Gallery 4" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g4.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g4.jpg.jpeg" alt="Gallery 5" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g6.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g6.jpg.jpeg" alt="Gallery 6" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g7.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g7.jpg.jpeg" alt="Gallery 7" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g8.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g8.jpg.jpeg" alt="Gallery 8" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="./img/g9.jpg.jpeg" data-lightbox="example-set" data-title="lorem ipsum dolor sit amet">
+                        <img src="./img/g9.jpg.jpeg" alt="Gallery 9" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    
 
 
     <footer>
@@ -72,10 +162,21 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
         integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        // Kích hoạt hiệu ứng cuộn trang AOS
+        AOS.init({
+            duration: 1000, // Thời gian chạy hiệu ứng (1000ms = 1 giây)
+            once: true      // Chỉ chạy hiệu ứng 1 lần khi cuộn qua, cuộn ngược lên không bị lặp lại
+        });
+    </script>
 </body>
 
 </html>
