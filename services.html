@@ -17,26 +17,53 @@
 </head>
 
 <body>
- <header>
-        <div>
-            <div>
-                <a href="#">Pooch Care</a>
-            </div>
+ <header class="fixed-top active">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <h1><a class="navbar-brand" href="index.html">Pooch Care</a></h1>
+                <button class="navbar-toggler bg-gradient collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <i class="fas fa-bars "></i>
+                    <i class="fas fa-times "></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="ico-search">
+                        <a href="#search-overlay" class="btn">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div id="search-overlay" class="overlay">
+                        <div class="overlay-content w-75">
+                            <form action="#" method="get" class="d-sm-flex input-group input-group-lg">
+                                <input class="form-control" type="search" name="s" id="input-search"
+                                    placeholder="Search.." required autofocus>
+                                <button class="btn btn-secondary rounded-end-2 bg-success" type="submit">Search</button>
+                                <a type="button" href="#" class="btn-close btn-close-white"></a>
+                            </form>
+                        </div>
+                    </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                </div>
+
+
             </nav>
 
-            <div>
-                <button type="button"><i>search</i></button>
-            </div>
         </div>
     </header>
 
@@ -51,7 +78,7 @@
             <div class="row content-photo-grids row mt-0 mb-5 SPService1">
                 <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
                     <a href="">
-                        <img src="./img/g1.jpg.jpeg" 
+                        <img src="./img/g1.jpeg" 
                              alt="Dog Walking" class="img-fluid w-100">
                     </a>
                 </div>
@@ -69,7 +96,7 @@
             <div class="row content-photo-grids row mb-5 SPService2">
                 <div class="col-lg-6 ps-lg-4 mb-4 mb-lg-0 order-lg-2">
                     <a href="">
-                        <img src="./img/g2.jpg.jpeg" 
+                        <img src="./img/g2.jpeg" 
                              alt="Dog Training" class="img-fluid w-100">
                     </a>
                 </div>
@@ -87,7 +114,7 @@
             <div class="row content-photo-grids row mb-5 SPService3">
                 <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
                     <a href="">
-                        <img src="./img/g3.jpg.jpeg" 
+                        <img src="./img/g3.jpeg" 
                              alt="Dog Boarding" class="img-fluid w-100">
                     </a>
                 </div>
@@ -105,7 +132,7 @@
             <div class="row content-photo-grids row mb-0 SPService4">
                 <div class="col-lg-6 ps-lg-4 mb-4 mb-lg-0 order-lg-2">
                     <a href="">
-                        <img src="./img/g4.jpg.jpeg" 
+                        <img src="./img/g4.jpeg" 
                              alt="Dog Transportation" class="img-fluid w-100">
                     </a>
                 </div>

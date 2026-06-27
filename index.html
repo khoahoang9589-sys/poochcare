@@ -5,47 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
         integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/_index.css">
 
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <a href="#">Pooch Care</a>
-            </div>
+    <header class="fixed-top active">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <h1><a class="navbar-brand" href="index.html">Pooch Care</a></h1>
+                <button class="navbar-toggler bg-gradient collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <i class="fas fa-bars "></i>
+                    <i class="fas fa-times "></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="ico-search">
+                        <a href="#search-overlay" class="btn">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div id="search-overlay" class="overlay">
+                        <div class="overlay-content w-75">
+                            <form action="#" method="get" class="d-sm-flex input-group input-group-lg">
+                                <input class="form-control" type="search" name="s" id="input-search"
+                                    placeholder="Search.." required autofocus>
+                                <button class="btn btn-secondary rounded-end-2 bg-success" type="submit">Search</button>
+                                <a type="button" href="#" class="btn-close btn-close-white"></a>
+                            </form>
+                        </div>
+                    </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                </div>
+
+
             </nav>
 
-            <div>
-                <i class="fa fa-search"></i>
-                <button type="button">.</button>
-            </div>
         </div>
     </header>
- 
- <section>
-    <h2 class="sub-title">Better pet nutrition.</h2>
-    <h1 class="main-title">The finest fresh food and all your pet needs.</h1>
-</section>
+
+    <section>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <div class="slider-info banner-view">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg text-left">
+                                        <h5 class="BannerSlider">Quality Things for Loving Pets</h5>
+                                        <p>Keeps your Pet Smiling</p>
+                                        <a class="btn btn-style btn-light mt-sm-5 mt-4 mr-2" href="about">
+                                            Read More</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4" href="contact">
+                                            Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="slider-info banner-view banner-top1">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg mx-lg-auto">
+                                        <h5 class="BannerSlider">Quality Things for Loving Pets</h5>
+                                        <p>Keeps your Pet Smiling</p>
+                                        <a class="btn btn-style btn-light mt-sm-5 mt-4 mr-2" href="about">
+                                            Read More</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4" href="contact">
+                                            Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="owl-item">
+                        <div class="slider-info banner-view banner-top2">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg text-left">
+                                        <h5 class="BannerSlider">Quality Things for Loving Pets</h5>
+                                        <p>Keeps your Pet Smiling</p>
+                                        <a class="btn btn-style btn-light mt-sm-5 mt-4 mr-2" href="about">
+                                            Read More</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4" href="contact">
+                                            Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="owl-item">
+                        <div class="slider-info banner-view banner-top3">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg  mx-lg-auto">
+                                        <h5 class="BannerSlider">Quality Things for Loving Pets</h5>
+                                        <p>Keeps your Pet Smiling</p>
+                                        <a class="btn btn-style btn-light mt-sm-5 mt-4 mr-2" href="about">
+                                            Read More</a>
+                                        <a class="btn btn-style btn-outline-light mt-sm-5 mt-4" href="contact">
+                                            Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <footer>
@@ -77,9 +185,36 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
-        integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+        integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- OWL JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>$(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true, //lặp lại các item
+                margin: 10, //khoảng cách giữa các item
+                nav: false, //hiện mũi tên trái phải
+                responsive: {
+                    0: {
+                        items: 1 //số lượng item khi ở màn hình >= 0
+                    },
+                    576: {
+                        items: 1 //số lượng item khi ở màn hình >= 576px
+                    }
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
