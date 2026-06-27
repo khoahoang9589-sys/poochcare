@@ -195,3 +195,45 @@ section {
   margin-top: 90px;
 }
 
+.breadcrumb-bg-about {
+  position: relative;
+  /* 1. Lớp phủ đen mờ độ đậm 65% + đường dẫn ảnh của bạn */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/g4.jpg.jpeg);
+
+  /* 2. Ép ảnh tràn hết chiều ngang màn hình */
+  background-size: cover;
+
+  /* 3. CĂN CHỈNH TỌA ĐỘ: Đẩy ảnh dịch lên một chút để lấy phần đầu 2 chú chó, không lo bị cắt mất mặt */
+  background-position: center 45%;
+  background-repeat: no-repeat;
+
+  display: grid;
+  align-items: center;
+  z-index: 0;
+  */
+}
+
+/* --- TỐI ƯU RESPONSIVE CHO ĐIỆN THOẠI (DƯỚI 768PX) --- */
+@media (max-width: 767.98px) {
+  .breadcrumb-bg-about {
+    /* Trên điện thoại, màn hình dọc nên cần tăng chiều cao lên một chút để thấy rõ ảnh */
+    height: 220px;
+    background-position: center center;
+    /* Căn chính giữa trên mobile */
+  }
+}
+
+/* Tùy chỉnh thêm cho breadcrumbs nếu cần */
+.breadcrumbs-custom-path {
+  font-size: 1.2rem;
+}
+
+.breadcrumbs-custom-path a:hover {
+  text-decoration: underline !important;
+}
+
+.breadcrumb-bg h2 {
+  font-size: 50px !important;
+  font-weight: 600;
+  color: #fff;
+}
