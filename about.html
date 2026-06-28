@@ -19,55 +19,43 @@
 </head>
 
 <body>
-   <header class="fixed-top active">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <h1><a class="navbar-brand" href="index.html">Pooch Care</a></h1>
-                <button class="navbar-toggler bg-gradient collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
-                    <i class="fas fa-bars "></i>
-                    <i class="fas fa-times "></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                    <div class="ico-search">
-                        <a href="#search-overlay" class="btn">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-                    <div id="search-overlay" class="overlay">
-                        <div class="overlay-content w-75">
-                            <form action="#" method="get" class="d-sm-flex input-group input-group-lg">
-                                <input class="form-control" type="search" name="s" id="input-search"
-                                    placeholder="Search.." required autofocus>
-                                <button class="btn btn-secondary rounded-end-2 bg-success" type="submit">Search</button>
-                                <a type="button" href="#" class="btn-close btn-close-white"></a>
-                            </form>
-                        </div>
-                    </div>
+    <header>
+        <div>
+            <div>
+                <a href="#">Pooch Care</a>
+            </div>
 
-                </div>
-
-
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
 
+            <div>
+                <button type="button"><i>search</i></button>
+            </div>
         </div>
     </header>
+
+
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-5">
+    <div class="container py-4">
+        <h2 class="title AboutBanner text-white text-center fw-bold fs-3 fs-md-2">About Us</h2>
+        
+        <ul class="breadcrumbs-custom-path mt-2 AllBreadcrumbs d-flex justify-content-center align-items-center list-unstyled gap-2 small">
+            <li>
+                <a href="index.html" class="text-success text-decoration-none fw-medium">Home</a>
+            </li>
+            <li class="text-white">»</li>
+            <li class="text-white">About Page</li>
+        </ul>
+    </div>
+</div>
 
 
     <section class="about__us py-5">
@@ -107,7 +95,7 @@
 
 
     <section class=" Our__history w3l-feature-1 position-relative py-5 text-white"
-        style="background: url('./img/banner2.jpeg') no-repeat center center / cover; min-height: 500px; display: flex; align-items: center;">
+        style="background: url('./img/banner2.jpg.jpeg') no-repeat center center / cover; min-height: 500px; display: flex; align-items: center;">
 
         <div class="position-absolute top-0 start-0 w-100 h-100"
             style="background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
@@ -192,7 +180,7 @@
                         Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.
                     </p>
                     <div class="position-relative">
-                        <img src="./img/banner3.jpeg" class="img-fluid rounded-3 shadow-sm" alt="Why Choose Us Dog">
+                        <img src="./img/banner3.jpg.jpeg" class="img-fluid rounded-3 shadow-sm" alt="Why Choose Us Dog">
                     </div>
                 </div>
 
@@ -275,7 +263,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team1.jpeg" class="img-fluid rounded-3 w-100" alt="Micheal Wagou">
+                                <img src="./img/team1.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="Micheal Wagou">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -303,7 +291,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team2.jpeg" class="img-fluid rounded-3 w-100" alt="Alex Mitchell">
+                                <img src="./img/team2.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="Alex Mitchell">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -330,7 +318,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team3.jpeg" class="img-fluid rounded-3 w-100" alt="Scott Colon">
+                                <img src="./img/team3.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="Scott Colon">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -357,7 +345,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team4.jpeg" class="img-fluid rounded-3 w-100" alt="John Harris">
+                                <img src="./img/team4.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="John Harris">
                             </a>
                         </div>
                         <div class="card-body p-0">
