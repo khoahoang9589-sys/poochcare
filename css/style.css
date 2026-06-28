@@ -67,11 +67,11 @@ h1.main-title {
 
 /* <a> Read More */
 /* HEADER  */
-header {
+header.main-header {
   background-color: var(--bg-color);
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 90px;
+  height: auto;
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -81,7 +81,7 @@ header {
 nav.navbar {
   justify-content: space-between;
   text-align: center;
-
+  padding: 24px 0;
 }
 
 .navbar .navbar-brand {
@@ -92,13 +92,7 @@ nav.navbar {
   color: var(--primary-color);
 }
 
-.nav-link,
-.dropdown-item {
 
-  font-size: 1.2em;
-  font-weight: 400;
-  position: relative;
-}
 
 a.nav-link.active {
   color: var(--primary-color) !important;
@@ -109,8 +103,7 @@ a.nav-link:hover {
 
 }
 
-a.nav-link::before,
-a.dropdown-item::before {
+a.nav-link:not(.dropdown-toggle)::before {
   position: absolute;
   content: "";
   width: 0px;
@@ -121,15 +114,63 @@ a.dropdown-item::before {
   transition: width 0.3s ease;
 }
 
-a.nav-link:hover::before,
-a.dropdown-item:hover::before {
+a.nav-link:hover::before {
   width: 100%;
+}
+
+.nav-link,
+.dropdown-item {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu {
+  align-items: center;
+  position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+  border: 1px solid var(--border-color);
+  transform: translateX(0);
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    border: 1px solid var(--border-color);
+    transform: translateX(-50px);
+  }
+}
+
+.navbar-nav .dropdown-menu:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: var(--dropdown-color);
+  border: 1px solid var(--border-color);
+  display: block;
+  border-right: none;
+  border-bottom: none;
+  transform: rotateZ(45deg);
+  position: absolute;
+  top: -7px;
+  left: 49%;
+  z-index: 1001;
 }
 
 /* fix ẩn hiện toggle nav do version bootstrap mới */
 .navbar-toggler.collapsed i.fa-times,
 .navbar-toggler:not(.collapsed) i.fa-bars {
   display: none !important;
+}
+
+.navbar-toggler {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 7px;
 }
 
 .ico-search {
@@ -195,6 +236,8 @@ section {
   margin-top: 90px;
 }
 
+
+/* breadcrumb  */
 .breadcrumb-bg-about {
   position: relative;
   /* 1. Lớp phủ đen mờ độ đậm 65% + đường dẫn ảnh của bạn */
@@ -210,7 +253,7 @@ section {
   display: grid;
   align-items: center;
   z-index: 0;
-  */
+
 }
 
 /* --- TỐI ƯU RESPONSIVE CHO ĐIỆN THOẠI (DƯỚI 768PX) --- */
