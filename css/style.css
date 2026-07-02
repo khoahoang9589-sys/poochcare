@@ -74,12 +74,19 @@ header.main-header {
   background-color: var(--bg-color);
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: auto;
+  /* height: 90px; */
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
-
+.header-fixed-space-height{
+  margin-top:90px;
+}
+@media (max-width: 992px) {
+    .header-fixed-space-height {
+        margin-top: 80px;
+    }
+}
 /* Navbar */
 nav.navbar {
   justify-content: space-between;
