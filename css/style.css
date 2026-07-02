@@ -4,17 +4,6 @@
   font-family: 'Jost', sans-serif;
 }
 
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-  color: #404040;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 /* Set vars */
 :root {
   --primary-color: #189A46;
@@ -33,6 +22,10 @@ textarea {
   --widget-bg: #3f3a64;
 }
 
+.text-bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
 h1,
 h2,
 h3,
@@ -41,10 +34,20 @@ h4 {
   padding: 0;
 }
 
+p {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: var(--font-color);
+}
+
 a,
 a:hover {
   text-decoration: none;
   color: #189A46;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* h2-sub-title */
@@ -81,7 +84,7 @@ header.main-header {
 nav.navbar {
   justify-content: space-between;
   text-align: center;
-  padding: 24px 0;
+  padding: 20px 0;
 }
 
 .navbar .navbar-brand {
@@ -93,25 +96,26 @@ nav.navbar {
 }
 
 
-
 a.nav-link.active {
   color: var(--primary-color) !important;
 }
 
 a.nav-link:hover {
-  color: var(--prsimary-color);
+  color: var(--primary-color);
 
 }
 
-a.nav-link:not(.dropdown-toggle)::before {
-  position: absolute;
-  content: "";
-  width: 0px;
-  height: 1px;
-  bottom: 3px;
-  left: 0;
-  background: var(--primary-color);
-  transition: width 0.3s ease;
+@media (min-width: 992px) {
+  a.nav-link:not(.dropdown-toggle)::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 1px;
+    bottom: 3px;
+    left: 0;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+  }
 }
 
 a.nav-link:hover::before {
@@ -125,6 +129,7 @@ a.nav-link:hover::before {
   font-weight: 400;
   position: relative;
   width: 100%;
+  color: var(--heading-color);
 }
 
 .dropdown-menu {
@@ -232,41 +237,28 @@ a.nav-link:hover::before {
 
 }
 
-section {
-  margin-top: 90px;
-}
-
 
 /* breadcrumb  */
 .breadcrumb-bg-about {
   position: relative;
-  /* 1. Lớp phủ đen mờ độ đậm 65% + đường dẫn ảnh của bạn */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/g4.jpg.jpeg);
-
-  /* 2. Ép ảnh tràn hết chiều ngang màn hình */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/g4.jpeg);
   background-size: cover;
-
-  /* 3. CĂN CHỈNH TỌA ĐỘ: Đẩy ảnh dịch lên một chút để lấy phần đầu 2 chú chó, không lo bị cắt mất mặt */
   background-position: center 45%;
   background-repeat: no-repeat;
-
   display: grid;
   align-items: center;
   z-index: 0;
 
 }
 
-/* --- TỐI ƯU RESPONSIVE CHO ĐIỆN THOẠI (DƯỚI 768PX) --- */
 @media (max-width: 767.98px) {
   .breadcrumb-bg-about {
-    /* Trên điện thoại, màn hình dọc nên cần tăng chiều cao lên một chút để thấy rõ ảnh */
     height: 220px;
     background-position: center center;
-    /* Căn chính giữa trên mobile */
+
   }
 }
 
-/* Tùy chỉnh thêm cho breadcrumbs nếu cần */
 .breadcrumbs-custom-path {
   font-size: 1.2rem;
 }
@@ -279,4 +271,93 @@ section {
   font-size: 50px !important;
   font-weight: 600;
   color: #fff;
+}
+
+/* SERVICES  */
+a.read {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--heading-color);
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+a.read:hover {
+  color: var(--primary-color);
+}
+
+h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.poo-services {
+  background-color: var(--bg-light);
+}
+
+.poo-services .row div {
+  border-radius: var(--border-radius);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.poo-services .services_content {
+  background-color: var(--bg-color);
+  padding: 40px 30px;
+  transition: all 0.5s ease 0s;
+}
+
+.poo-services .services_content:hover {
+  background-color: var(--bg-light);
+
+}
+
+.poo-services .services_content i {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.list-group li {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--heading-color);
+  margin: 7px 0;
+  font-weight: 600;
+}
+
+.list-group i {
+  color: var(--primary-color);
+  margin-right: 12px;
+  background: var(--bg-light);
+  font-size: 10px;
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.countup_content span {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.countup_content h4 {
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
+  font-weight: 400;
 }

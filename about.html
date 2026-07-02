@@ -19,43 +19,70 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <a href="#">Pooch Care</a>
-            </div>
+    <header class="main-header fixed-top active">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <h1><a class="navbar-brand" href="index.html">Pooch Care</a></h1>
+                <button class="navbar-toggler bg-gradient collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <i class="fas fa-bars "></i>
+                    <i class="fas fa-times "></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Blog Post</a>
+                                <a class="dropdown-item" href="#">Landing Page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="ico-search">
+                        <a href="#search-overlay" class="btn">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div id="search-overlay" class="overlay">
+                        <div class="overlay-content w-75">
+                            <form action="#" method="get" class="d-sm-flex input-group input-group-lg">
+                                <input class="form-control" type="search" name="s" id="input-search"
+                                    placeholder="Search.." required autofocus>
+                                <button class="btn btn-secondary rounded-end-2 bg-success" type="submit">Search</button>
+                                <a type="button" href="#" class="btn-close btn-close-white"></a>
+                            </form>
+                        </div>
+                    </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                </div>
+
+
             </nav>
 
-            <div>
-                <button type="button"><i>search</i></button>
-            </div>
         </div>
     </header>
 
 
-    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-5">
-    <div class="container py-4">
-        <h2 class="title AboutBanner text-white text-center fw-bold fs-3 fs-md-2">About Us</h2>
-        
-        <ul class="breadcrumbs-custom-path mt-2 AllBreadcrumbs d-flex justify-content-center align-items-center list-unstyled gap-2 small">
-            <li>
-                <a href="index.html" class="text-success text-decoration-none fw-medium">Home</a>
-            </li>
-            <li class="text-white">»</li>
-            <li class="text-white">About Page</li>
-        </ul>
-    </div>
-</div>
+    <section class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-5">
+        <div class="container py-4">
+            <h2 class="title AboutBanner text-white text-center fw-bold fs-3 fs-md-2">About Us</h2>
+
+            <ul
+                class="breadcrumbs-custom-path mt-2 AllBreadcrumbs d-flex justify-content-center align-items-center list-unstyled gap-2 small">
+                <li>
+                    <a href="index.html" class="text-success text-decoration-none fw-medium">Home</a>
+                </li>
+                <li class="text-white">»</li>
+                <li class="text-white">About Page</li>
+            </ul>
+        </div>
+    </section>
 
 
     <section class="about__us py-5">
@@ -63,12 +90,10 @@
             <div class="row align-items-center">
 
                 <div class="col-md-5 mb-4 mb-md-0">
-                    <span class=" text-uppercase tracking-wider" style="color: #ff545a; font-size: 18px;">
-                        About Us
-                    </span>
-                    <h2 class="fw-bold text-dark mt-2 mb-3" style="font-size: 40px; line-height: 1.2;">
+                    <h2 class="sub-title">About Us</h2>
+                    <h1 class="main-title">
                         We Have 10+ Years Of<br>Experience.
-                    </h2>
+                    </h1>
                     <p class="fw-bold text-dark mb-0" style="font-size: 22px">
                         Let Us Take Care Of Your Pets!
                     </p>
@@ -95,7 +120,7 @@
 
 
     <section class=" Our__history w3l-feature-1 position-relative py-5 text-white"
-        style="background: url('./img/banner2.jpg.jpeg') no-repeat center center / cover; min-height: 500px; display: flex; align-items: center;">
+        style="background: url('./img/banner2.jpeg') no-repeat center center / cover; min-height: 500px; display: flex; align-items: center;">
 
         <div class="position-absolute top-0 start-0 w-100 h-100"
             style="background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
@@ -107,9 +132,9 @@
                 <div class="col-lg-7 col-md-9 text-start">
 
                     <div class="mb-4">
-                        <h6 class="text-danger text-uppercase fw-semibold tracking-wider" style="font-size: 18px;">Our
-                            history of Pooch Care</h6>
-                        <h2 class="fw-bold my-3 text-white" style="font-size: 2.5rem;">Our History</h2>
+                        <h2 class="sub-title">Our
+                            history of Pooch Care</h2>
+                        <h1 class="main-title">Our History</h1>
                         <p class="text-white-100 fw-normal opacity-75" style="font-size: 1.2rem;">
                             Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum facere aperiam sequi optio
                             consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis.Lorem
@@ -168,19 +193,19 @@
         <div class="container py-lg-5 AboutPageFeatures">
             <div class="row align-items-center">
 
-                <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
-                    <h6 class=" text-uppercase tracking-wider text-end" style="color: #ff545a; font-size: 18px;">
+                <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0 text-end">
+                    <h2 class="sub-title">
                         Who We Are
-                    </h6>
-                    <h2 class="fw-bold text-dark mb-3 text-end" style="font-size: 2.5rem;">
-                        Why Choose Us
                     </h2>
+                    <h1 class="main-title">
+                        Why Choose Us
+                    </h1>
                     <p class="text-secondary mb-3 text-end" style="font-size: 1.2rem; text-indent: 30px;">
                         Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla, gravida felis vitae.
                         Phasellus lacinia id, sunt in culpa quis. Phasellus lacinia.
                     </p>
                     <div class="position-relative">
-                        <img src="./img/banner3.jpg.jpeg" class="img-fluid rounded-3 shadow-sm" alt="Why Choose Us Dog">
+                        <img src="./img/banner3.jpeg" class="img-fluid rounded-3 shadow-sm" alt="Why Choose Us Dog">
                     </div>
                 </div>
 
@@ -251,9 +276,9 @@
 
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-md-8">
-                    <h6 class=" text-uppercase tracking-wider text-center" style="color: #ff545a; font-size: 18px;">Our
-                        Experts</h6>
-                    <h2 class="fw-bold text-dark" style="font-size: 40px;">Our Team</h2>
+                    <h2 class="sub-title">Our
+                        Experts</h2>
+                    <h1 class="main-title">Our Team</h1>
                 </div>
             </div>
 
@@ -263,7 +288,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team1.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="Micheal Wagou">
+                                <img src="./img/team1.jpeg" class="img-fluid rounded-3 w-100" alt="Micheal Wagou">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -291,7 +316,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team2.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="Alex Mitchell">
+                                <img src="./img/team2.jpeg" class="img-fluid rounded-3 w-100" alt="Alex Mitchell">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -318,7 +343,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team3.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="Scott Colon">
+                                <img src="./img/team3.jpeg" class="img-fluid rounded-3 w-100" alt="Scott Colon">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -345,7 +370,7 @@
                     <div class="card border-0 bg-transparent h-100">
                         <div class="position-relative overflow-hidden mb-3">
                             <a href="#url">
-                                <img src="./img/team4.jpg.jpeg" class="img-fluid rounded-3 w-100" alt="John Harris">
+                                <img src="./img/team4.jpeg" class="img-fluid rounded-3 w-100" alt="John Harris">
                             </a>
                         </div>
                         <div class="card-body p-0">
@@ -403,8 +428,8 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
-        integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+        integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 

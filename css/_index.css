@@ -101,3 +101,10 @@ p.text-label {
   left: 0;
   right: 0;
 }
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-color);
+  width: 30px;
+  height: 10px;
+}

@@ -3,20 +3,6 @@
     align-items: center; 
 }
 
-.w3l-content-with-photo-4 .sub-title {
-    font-size: 18px;
-    font-weight: 400;
-    color: #f85c26;
-    margin-bottom: 8px;
-}
-
-.w3l-content-with-photo-4 .hny-title {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 600;
-    color: #3f3a64;
-    margin-bottom: 15px;
-}
 
 .w3l-content-with-photo-4 p {
     font-size: 1.2rem;
@@ -24,20 +10,7 @@
     color: #696687;
 }
 
-.w3l-content-with-photo-4 .read {
-    font-size: 17px;
-    font-weight: 600;
-    color: #3f3a64;
-    text-decoration: none;
-    display: inline-block;
-    border-bottom: 2px solid #189a46; 
-    padding-bottom: 3px;
-    transition: all 0.3s ease;
-}
 
-.w3l-content-with-photo-4 .read:hover {
-    color: #189a46;
-}
 
 
 .w3l-content-with-photo-4 .img-fluid {

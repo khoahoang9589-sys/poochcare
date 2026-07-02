@@ -17,30 +17,56 @@
 </head>
 
 <body>
- <header>
-        <div>
-            <div>
-                <a href="#">Pooch Care</a>
-            </div>
+ <header class="main-header fixed-top active">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <h1><a class="navbar-brand" href="index.html">Pooch Care</a></h1>
+                <button class="navbar-toggler bg-gradient collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <i class="fas fa-bars "></i>
+                    <i class="fas fa-times "></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Blog Post</a>
+                                <a class="dropdown-item" href="#">Landing Page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="ico-search">
+                        <a href="#search-overlay" class="btn">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div id="search-overlay" class="overlay">
+                        <div class="overlay-content w-75">
+                            <form action="#" method="get" class="d-sm-flex input-group input-group-lg">
+                                <input class="form-control" type="search" name="s" id="input-search"
+                                    placeholder="Search.." required autofocus>
+                                <button class="btn btn-secondary rounded-end-2 bg-success" type="submit">Search</button>
+                                <a type="button" href="#" class="btn-close btn-close-white"></a>
+                            </form>
+                        </div>
+                    </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                </div>
+
+
             </nav>
 
-            <div>
-                <button type="button"><i>search</i></button>
-            </div>
         </div>
     </header>
 
-<div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-5">
+<section class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-5">
     <div class="container py-4">
         <h2 class="title AboutBanner text-white text-center fw-bold fs-3 fs-md-2">Services</h2>
         
@@ -52,7 +78,7 @@
             <li class="text-white">Services Page</li>
         </ul>
     </div>
-</div>
+</section>
 
  
  
@@ -63,13 +89,13 @@
             <div class="row content-photo-grids row mt-0 mb-5 SPService1">
                 <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
                     <a href="">
-                        <img src="./img/g1.jpg.jpeg" 
+                        <img src="./img/g1.jpeg" 
                              alt="Dog Walking" class="img-fluid w-100">
                     </a>
                 </div>
                 <div class="col-lg-6 text-start ps-lg-5">
-                    <h6 class="sub-title">01</h6>
-                    <h3 class="hny-title">Dog Walking</h3>
+                    <h2 class="sub-title">01</h2>
+                    <h1 class="main-title">Dog Walking</h1>
                     <p class="mt-3 mb-3">
                         Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. 
                         Fuga, suscipit totam animi consequatur saepe blanditiis.
@@ -81,13 +107,13 @@
             <div class="row content-photo-grids row mb-5 SPService2">
                 <div class="col-lg-6 ps-lg-4 mb-4 mb-lg-0 order-lg-2">
                     <a href="">
-                        <img src="./img/g2.jpg.jpeg" 
+                        <img src="./img/g2.jpeg" 
                              alt="Dog Training" class="img-fluid w-100">
                     </a>
                 </div>
                 <div class="col-lg-6 text-start pe-lg-5 order-lg-1">
-                    <h6 class="sub-title">02</h6>
-                    <h3 class="hny-title">Dog Training</h3>
+                    <h2 class="sub-title">02</h2>
+                    <h1 class="main-title">Dog Training</h1>
                     <p class="mt-3 mb-3">
                         Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. 
                         Fuga, suscipit totam animi consequatur saepe blanditiis.
@@ -99,13 +125,13 @@
             <div class="row content-photo-grids row mb-5 SPService3">
                 <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
                     <a href="">
-                        <img src="./img/g3.jpg.jpeg" 
+                        <img src="./img/g3.jpeg" 
                              alt="Dog Boarding" class="img-fluid w-100">
                     </a>
                 </div>
                 <div class="col-lg-6 text-start ps-lg-5">
-                    <h6 class="sub-title">03</h6>
-                    <h3 class="hny-title">Dog Boarding</h3>
+                    <h2 class="sub-title">03</h2>
+                    <h1 class="main-title">Dog Boarding</h1>
                     <p class="mt-3 mb-3">
                         Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. 
                         Fuga, suscipit totam animi consequatur saepe blanditiis.
@@ -117,13 +143,13 @@
             <div class="row content-photo-grids row mb-0 SPService4">
                 <div class="col-lg-6 ps-lg-4 mb-4 mb-lg-0 order-lg-2">
                     <a href="">
-                        <img src="./img/g4.jpg.jpeg" 
+                        <img src="./img/g4.jpeg" 
                              alt="Dog Transportation" class="img-fluid w-100">
                     </a>
                 </div>
                 <div class="col-lg-6 text-start pe-lg-5 order-lg-1">
-                    <h6 class="sub-title">04</h6>
-                    <h3 class="hny-title">Dog Transportation</h3>
+                    <h2 class="sub-title">04</h2>
+                    <h1 class="main-title">Dog Transportation</h1>
                     <p class="mt-3 mb-3">
                         Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. 
                         Fuga, suscipit totam animi consequatur saepe blanditiis.
@@ -169,8 +195,8 @@
 
 
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
-        integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+        integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
