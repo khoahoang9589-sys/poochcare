@@ -46,8 +46,10 @@ a:hover {
   color: #189A46;
 }
 
-li {
+ul, li {
   list-style-type: none;
+  margin:0;
+  padding: 0;
 }
 
 /* h2-sub-title */
@@ -79,14 +81,17 @@ header.main-header {
   align-items: center;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
-.header-fixed-space-height{
-  margin-top:90px;
+
+.header-fixed-space-height {
+  margin-top: 90px;
 }
+
 @media (max-width: 992px) {
-    .header-fixed-space-height {
-        margin-top: 80px;
-    }
+  .header-fixed-space-height {
+    margin-top: 80px;
+  }
 }
+
 /* Navbar */
 nav.navbar {
   justify-content: space-between;
@@ -190,6 +195,7 @@ a.nav-link:hover::before {
 }
 
 .ico-search a.btn {
+
   font-size: 16px;
   width: 45px;
   height: 45px;
@@ -197,6 +203,10 @@ a.nav-link:hover::before {
   border-radius: 45px;
   text-align: center;
   padding: 0;
+}
+
+.bg-success {
+  background-color: var(--primary-color) !important;
 }
 
 .ico-search a:hover {
@@ -278,93 +288,4 @@ a.nav-link:hover::before {
   font-size: 50px !important;
   font-weight: 600;
   color: #fff;
-}
-
-/* SERVICES  */
-a.read {
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--heading-color);
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 3px;
-  transition: all 0.3s ease;
-}
-
-a.read:hover {
-  color: var(--primary-color);
-}
-
-h4 a {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  color: var(--heading-color);
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.poo-services {
-  background-color: var(--bg-light);
-}
-
-.poo-services .row div {
-  border-radius: var(--border-radius);
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.poo-services .services_content {
-  background-color: var(--bg-color);
-  padding: 40px 30px;
-  transition: all 0.5s ease 0s;
-}
-
-.poo-services .services_content:hover {
-  background-color: var(--bg-light);
-
-}
-
-.poo-services .services_content i {
-  font-size: 30px;
-  color: var(--primary-color);
-}
-
-.list-group li {
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--heading-color);
-  margin: 7px 0;
-  font-weight: 600;
-}
-
-.list-group i {
-  color: var(--primary-color);
-  margin-right: 12px;
-  background: var(--bg-light);
-  font-size: 10px;
-  padding: 8px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.countup_content span {
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 600;
-  color: #fff;
-  margin-top: 30px;
-  margin-bottom: 0;
-}
-
-.countup_content h4 {
-  font-size: 20px;
-  line-height: 25px;
-  text-transform: capitalize;
-  color: #fff;
-  margin-top: 10px;
-  opacity: 0.8;
-  font-weight: 400;
 }
