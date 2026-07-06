@@ -51,7 +51,7 @@
     background-color: #198754 !important; 
     color: #ffffff !important;          
 }
-section .Our__history::before{
+section.Our__history::before{
     content: "";
     background-color: rgba(0, 4, 8, 0.69);
     position: absolute;
