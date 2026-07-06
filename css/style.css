@@ -46,9 +46,10 @@ a:hover {
   color: #189A46;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -209,6 +210,20 @@ a.nav-link:hover::before {
   background-color: var(--primary-color) !important;
 }
 
+.btn-primary {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s;
+  padding: 12px 35px;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: color-mix(in srgb, var(--primary-color), black 30%);
+  border-color: var(--primary-color);
+}
+
 .ico-search a:hover {
   background-color: var(--primary-color);
   color: white;
@@ -272,7 +287,6 @@ a.nav-link:hover::before {
   .breadcrumb-bg-about {
     height: 220px;
     background-position: center center;
-
   }
 }
 
@@ -288,4 +302,79 @@ a.nav-link:hover::before {
   font-size: 50px !important;
   font-weight: 600;
   color: #fff;
+}
+
+footer {
+  background-color: #111;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--para-color);
+}
+
+footer .copyright {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--para-color);
+  margin-bottom: 0;
+}
+
+footer .copyright span {
+  color: var(--secondary-color);
+}
+
+footer h5 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+footer li {
+  margin-bottom: 5px;
+  line-height: 28px;
+}
+
+footer li a {
+  color: var(--para-color);
+  transition: all 0.3s;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+  color: var(--bg-color);
+}
+
+footer .social-icon li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+/* back to top  */
+
+#movetop {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  background: var(--primary-color);
+  padding: 0;
+  line-height: 36px;
+  border-radius: 50px;
+  transition: 0.3s ease-out;
+}
+
+#movetop:hover {
+  transform: translate3d(0, -5px, 0);
+  -webkit-transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-out;
 }

@@ -371,3 +371,23 @@ section.poo-services {
   margin-top: 50px !important;
   position: inherit;
 }
+
+.subscribe{
+  max-width: 650px;
+  margin:0 auto;
+}
+.subscribe input {
+  height: 60px;
+  border-radius: var(--border-radius);
+  flex-basis: 70%;
+}
+
+.subscribe button {
+  flex-basis: 27%;
+}
+
+@media (max-width: 768px) {
+  .subscribe button {
+  width: 99%;
+}
+}
