@@ -51,3 +51,13 @@
     background-color: #198754 !important; 
     color: #ffffff !important;          
 }
+section .Our__history::before{
+    content: "";
+    background-color: rgba(0, 4, 8, 0.69);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
